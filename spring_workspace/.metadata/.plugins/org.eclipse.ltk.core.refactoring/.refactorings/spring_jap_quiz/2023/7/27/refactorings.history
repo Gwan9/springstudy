@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;kr.co.jhta.web.dao&apos; to &apos;kr.co.jhta.web.repository&apos;&#x0D;&#x0A;- Original project: &apos;spring_jap_quiz&apos;&#x0D;&#x0A;- Original element: &apos;spring_jap_quiz/src/kr.co.jhta.web.dao&apos;&#x0D;&#x0A;- Renamed element: &apos;spring_jap_quiz/src/kr.co.jhta.web.repository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;kr.co.jhta.web.dao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;kr.co.jhta.web.dao" name="kr.co.jhta.web.repository" qualified="false" references="true" stamp="1688528394684" textual="false" version="1.0"/>
+</session>

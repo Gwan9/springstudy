@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- db 설정파일을 읽는 객체 -->
+<bean id="property" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="location" value="/WEB-INF/db.properties"></property>
+</bean>
+
+<!-- dbcp -->
+
+<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp2.BasicDataSource">
+<property name="driverClassName" value="${driver}"/>
+<property name="url" value="${url}"/>
+<property name="username" value="${username}"/>
+<property name="password" value="${password}"/>
+</bean>
+
+<!-- 공장객체 -->
+<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<property name="dataSource" ref="dataSource" />
+	<property name="configLocation" value="/WEB-INF/sqlMapConfig.xml"/> <!-- 혹시 설정파일이 더 필요한게 있으면 이걸 써 -->
+</bean>
+
+<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+	<constructor-arg ref="sqlSessionFactoryBean"/>
+</bean>
+
+</beans>
+	

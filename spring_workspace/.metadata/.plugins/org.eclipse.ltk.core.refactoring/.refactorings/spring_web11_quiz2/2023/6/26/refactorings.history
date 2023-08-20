@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;spring_web11_quiz2/WebContent/WEB-INF/spring-controller.xml&apos; to &apos;spring-control.xml&apos;" description="Rename resource &apos;spring-controller.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/spring-controller.xml" name="spring-control.xml" stamp="1687844367805" updateReferences="true"/>&#x0A;&#x0A;</session>

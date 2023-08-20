@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;spring_web8&apos;&#x0D;&#x0A;- Original project: &apos;spring_web8&apos;&#x0D;&#x0A;- Original element: &apos;spring_web8/src/kr.co.subway.web.sgh&apos;" description="Delete element" element1="/src&lt;kr.co.subway.web.sgh" element2="/src&lt;kr.co.subway.web" element3="/src&lt;kr.co.subway" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1687486418872" subPackages="false" version="1.0"/>
+</session>

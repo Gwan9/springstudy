@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- <bean id="cs" class="kr.co.jhta.app.CustomerServiceImple">
+	<property name="name" value="홍길동"></property>
+	<property name="email" value="hong@gmail.com"></property>
+</bean> -->
+<!-- <bean id="cs" class="kr.co.jhta.app.CustomerServiceImple" p:name="홍길동" p:email="hong@gmail.com" ></bean> -->
+<bean id="cs" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="target" ref="imple"></property><!-- 이 작업을 할 때 -->
+	<property name="interceptorNames" ><!-- 가로채서 -->
+		<list>
+			<value>hijack</value> <!-- 이 것을 해 -->
+			<value>nt</value> <!-- 이 것을 해 -->
+		</list>
+	</property>
+</bean>
+
+
+<bean id="hijack" class="kr.co.jhta.app.HijackBeforeAdvice"></bean>
+<bean id="nt" class="kr.co.jhta.app.NowTime"></bean>
+<bean id="imple" class="kr.co.jhta.app.CustomerServiceImple" p:name="홍길동" p:email="hong@gmail.com"></bean>
+
+</beans>

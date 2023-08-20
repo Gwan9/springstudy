@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<context:annotation-config />
+
+	<bean id="ct" class="kr.co.jhta.app.CheckTime"></bean>
+
+	<bean id="mysqldao" class="kr.co.jhta.app.dao.MySqlDeptDAO"></bean>
+	<bean id="oracle" class="kr.co.jhta.app.dao.OracleDeptDAO"></bean>
+
+	<bean id="service" class="kr.co.jhta.app.service.DeptService"></bean>
+
+	<aop:config>
+		<aop:aspect id="checkAsect" ref="ct">
+			<aop:pointcut
+				expression="execution (public * readAll(..))" id="checkPointcut" />
+			<aop:around method="logAround" pointcut-ref="checkPointcut" />
+		</aop:aspect>
+	</aop:config>
+
+
+</beans>

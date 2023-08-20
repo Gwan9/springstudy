@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;kr.co.jhta.app.HijactThrowAdvice.java&apos; to &apos;HijackThrowAdvice.java&apos;&#x0D;&#x0A;- Original project: &apos;spring_aop04&apos;&#x0D;&#x0A;- Original element: &apos;kr.co.jhta.app.HijactThrowAdvice.java&apos;&#x0D;&#x0A;- Renamed element: &apos;kr.co.jhta.app.HijackThrowAdvice.java&apos;" description="Rename compilation unit &apos;HijactThrowAdvice.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;kr.co.jhta.app{HijactThrowAdvice.java" name="HijackThrowAdvice.java" references="false" stamp="1687248773560" version="1.0"/>
+</session>

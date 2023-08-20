@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <!-- 자동으로 DI를 도와주는 객체 -->
+        <bean id="" class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+       	
+        <bean id="nt" class="kr.co.jhta.app.NowTime"></bean>
+        <bean id="imple" class="kr.co.jhta.app.HelloImple">
+        	<property name="nt" ref="nt"></property>
+        </bean>
+        
+</beans>

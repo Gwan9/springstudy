@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="testContoroller" class="kr.co.jhta.web.control.TestController"></bean>
+<!-- test.do ==> kr.co.jhta.web.control.TestController.test()
+								==>test.jsp 이동
+	 -->
+	 
+	 
+	 <bean id="helloController" class="kr.co.jhta.web.control.HelloController"></bean>
+	 
+	 <!-- hello.do ==> HelloController.hello(Model model)
+	 			==> hello.jsp (msg 변수에 안녕하세요 메세지를 담아서 뷰로 전달
+	  -->
+<bean id="fileUploadController" class="kr.co.jhta.web.control.FileUploadController"></bean>
+
+<bean id="fileValidator" class="kr.co.jhta.web.control.FileValidator"></bean>
+
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<!-- <property name="maxUploadSize" value="10485760"></property> -->
+</bean>
+</beans>

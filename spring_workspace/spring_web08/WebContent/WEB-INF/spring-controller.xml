@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:annotation-config/>
+<bean id="dao" class="kr.co.jhta.web.dao.MemberDAO"></bean>
+<!-- 컨트롤러와 일반 빈을 등록하는 곳 -->
+
+<bean id="mainController" class="kr.co.jhta.web.control.MainController"></bean>
+<bean id="loginController" class="kr.co.jhta.web.control.LoginController"></bean>
+<bean id="joinController" class="kr.co.jhta.web.control.JoinController"></bean>
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Handler Mapping -->
+<bean id="beanNameUrlHandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+
+<!-- Controller 등록 -->
+<bean id="/hello.do" class="spring_web2.HelloController"></bean>
+
+
+ <!-- view Resolver -->
+<bean id="" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/" ></property>
+	<property name="suffix" value=".jsp"></property>
+</bean>
+
+
+
+</beans>

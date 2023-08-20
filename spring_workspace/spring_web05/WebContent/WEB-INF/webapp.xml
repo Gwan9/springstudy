@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="beanNameUrlHandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+
+<!-- 요청 : /index.do 뷰명: index 전달객체 : msg 값 : 인덱스페이지
+	class명 : kr.co.jhta.web.control.IndexController -->
+
+<bean id="/index.do" class="kr.co.jhta.web.control.IndexController"></bean>
+
+<bean id="internalResourceViewResolver"
+	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/WEB-INF/views/"></property>
+	<property name="suffix" value=".jsp"></property>
+	</bean>
+
+</beans>

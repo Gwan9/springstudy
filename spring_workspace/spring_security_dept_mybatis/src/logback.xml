@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 로그에서 원하는 부분만 골라서 저장할 수 있음 -->
+
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS } [%thread] %-5level %logger{35} - %msg %n</pattern>
+    </encoder>
+  </appender>
+  
+  <!-- 파일 저장용 appender -->
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+  	<file>d:\log\log1.log</file>
+  	<encoder>
+  		<pattern>%d{HH:mm:ss.SSS } [%thread] %-5level %logger{35} - %msg %n</pattern>
+  	</encoder>
+  </appender>
+	
+<!-- control 에서 발생하는 로그를 남기게 -->
+	<logger name="kr.co.jhta.web.control" level="info">
+		<appender-ref ref="FILE"/>
+		<appender-ref ref="STDOUT"/>
+	</logger>
+
+  <root level="warn">
+   <!--  <appender-ref ref="STDOUT" /> -->
+    <appender-ref ref="FILE" />
+  </root>
+  </configuration>

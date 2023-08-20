@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 스프링 컨테이너에게 위임 할 빈을 등록 : app.xml -->
+<!-- Handler Mapping -->
+<bean id="beanNameUrlHandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+
+<!-- 등록 할 컨트롤러 -->
+
+<bean id="/hello.do" class="spring_web1.HelloController"></bean>
+<bean id="/welcome.do" class="spring_web1.WelcomController"></bean>
+
+<!-- view Resolver : 뷰 해석기 -->
+<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/" ></property>
+	<property name="suffix" value=".jsp"></property>
+</bean>
+
+
+</beans>

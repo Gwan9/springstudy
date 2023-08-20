@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_data_jpa"/>
+<aop-project name="spring_web02"/>
+<aop-project name="spring_web06"/>
+<aop-project name="spring_web13"/>
+<aop-project name="spring_rest"/>
+<aop-project name="spring_app19"/>
+<aop-project name="spring_board_security_usubg_db"/>
+<aop-project name="spring_board"/>
+<aop-project name="spring_aop10_2">
+<aspect-definition advice-class-name="kr.co.jhta.app.CheckReloadTime" advice-method-name="logAround" advice-type="AROUND" aspect-end-line-number="21" aspect-name="crt" aspect-start-line-number="21" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_aop10_2/src/app.xml" pointcut-expression="execution (public * fire(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop10_2|3:src/app.xml|7:beans:8|8:w:14" bean-file="/spring_aop10_2/src/app.xml" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop10_2/src/app.xml" source="=spring_aop10_2/src&lt;kr.co.jhta.app{CheckReloadTime.java[CheckReloadTime~logAround~QProceedingJoinPoint;" source-start-line="10" target="=spring_aop10_2/src&lt;kr.co.jhta.app{WeaponImple.java[WeaponImple~fire" target-start-line="13"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_aop06"/>
+<aop-project name="spring_aop02"/>
+<aop-project name="spring_app21_hw"/>
+<aop-project name="spring_web05"/>
+<aop-project name="spring_web09"/>
+<aop-project name="spring_web1"/>
+<aop-project name="spring_board_security"/>
+<aop-project name="spring_web12_quiz"/>
+<aop-project name="spring_aop01"/>
+<aop-project name="spring_aop05"/>
+<aop-project name="spring_aop10_1"/>
+<aop-project name="spring_aop09_anno">
+<aspect-definition advice-class-name="kr.co.jhta.app.CheckTime" advice-method-name="logAround(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="9" aspect-name="ct" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring_aop09_anno/src/app.xml" pointcut-expression="publicTarget()" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop09_anno|3:src/app.xml|7:beans:6|8:cs:11" bean-file="/spring_aop09_anno/src/app.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop09_anno/src/app.xml" source="=spring_aop09_anno/src&lt;kr.co.jhta.app{CheckTime.java[CheckTime~logAround~QProceedingJoinPoint;" source-start-line="17" target="=spring_aop09_anno/src&lt;kr.co.jhta.app{CustomerServiceImple.java[CustomerServiceImple~printEmail" target-start-line="22"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_jpa"/>
+<aop-project name="spring_rest2"/>
+<aop-project name="spring_web04"/>
+<aop-project name="spring_web08"/>
+<aop-project name="spring_web11_quiz2"/>
+<aop-project name="spring_jap_quiz"/>
+<aop-project name="spring_app20_mybatis"/>
+<aop-project name="spring_aop04"/>
+<aop-project name="spring_aop08">
+<aspect-definition advice-class-name="kr.co.jhta.app.CheckTime" advice-method-name="logAround" advice-type="AROUND" aspect-end-line-number="23" aspect-name="ct" aspect-start-line-number="23" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_aop08/src/application.xml" pointcut-expression="execution (public * readAll(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop08|3:src/application.xml|7:beans:8|8:service:17" bean-file="/spring_aop08/src/application.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop08/src/application.xml" source="=spring_aop08/src&lt;kr.co.jhta.app{CheckTime.java[CheckTime~logAround~QProceedingJoinPoint;" source-start-line="10" target="=spring_aop08/src&lt;kr.co.jhta.app.service{DeptService.java[DeptService~readAll" target-start-line="28"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_app15_anno"/>
+<aop-project name="spring_web03"/>
+<aop-project name="spring_web07"/>
+<aop-project name="spring_web10"/>
+<aop-project name="spring_app14_anno"/>
+<aop-project name="spring_app16javaconf"/>
+<aop-project name="spring_security_dept_mybatis"/>
+<aop-project name="spring_app13_anno"/>
+<aop-project name="spring_app12_anno"/>
+<aop-project name="spring_board_security_usubg_db2"/>
+<aop-project name="spring_aop07">
+<aspect-definition advice-class-name="kr.co.jhta.app.CheckTime" advice-method-name="logAround" advice-type="AROUND" aspect-end-line-number="22" aspect-name="ct" aspect-start-line-number="22" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_aop07/src/app.xml" pointcut-expression="execution (public * printEmail(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop07|3:src/app.xml|7:beans:6|8:cs:10" bean-file="/spring_aop07/src/app.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop07/src/app.xml" source="=spring_aop07/src&lt;kr.co.jhta.app{CheckTime.java[CheckTime~logAround~QProceedingJoinPoint;" source-start-line="8" target="=spring_aop07/src&lt;kr.co.jhta.app{CustomerServiceImple.java[CustomerServiceImple~printEmail" target-start-line="22"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_aop10_3">
+<aspect-definition advice-class-name="kr.co.jhta.app.CheckReloadTime" advice-method-name="logAround(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="9" aspect-name="crt" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring_aop10_3/src/app.xml" pointcut-expression="publicTarget()" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop10_3|3:src/app.xml|7:beans:6|8:w:11" bean-file="/spring_aop10_3/src/app.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop10_3/src/app.xml" source="=spring_aop10_3/src&lt;kr.co.jhta.app{CheckReloadTime.java[CheckReloadTime~logAround~QProceedingJoinPoint;" source-start-line="18" target="=spring_aop10_3/src&lt;kr.co.jhta.app{WeaponImple.java[WeaponImple~reload" target-start-line="19"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_board2"/>
+</aop-reference-model>
